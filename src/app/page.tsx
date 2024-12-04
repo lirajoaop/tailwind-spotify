@@ -1,4 +1,5 @@
-import {Home as HomeIcon, Search, Library} from "lucide-react"
+import {Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight} from "lucide-react"
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
               </a>
             </nav>
 
-            <nav className="mt-6 pt-10 border-t border-zinc-800 flex flex-col gap-3">
+            <nav className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
               <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist pra limpar o violão</a>
               <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">trap etc</a>
               <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Gangsta Rap</a>
@@ -34,9 +35,56 @@ export default function Home() {
             </nav>
 
           </aside>
+
           <main className="flex-1 p-6">
-            main
+            <div className="flex items-center gap-4">
+              <button className="rounded-full bg-black/40 p-1">
+                <ChevronLeft />
+              </button>
+              <button className="rounded-full bg-black/40 p-1">
+                <ChevronRight />
+              </button>
+            </div>
+
+            <h1 className="font-semibold text-3xl">
+              Good Afternoon
+            </h1>
+
+            <div className="grid grid-cols-3 gap-4 mt-4">
+              <a href="#" className="bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                <Image src="/johnmayer.jpg" width={104} height={104} alt="Capa do álbum de John Mayer"/>
+                <strong>Playlist pra limpar o violão</strong>
+              </a>
+
+              <a href="#" className="bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                <Image src="/johnmayer.jpg" width={104} height={104} alt="Capa do álbum de John Mayer"/>
+                <strong>Playlist pra limpar o violão</strong>
+              </a>
+
+              <a href="#" className="bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                <Image src="/johnmayer.jpg" width={104} height={104} alt="Capa do álbum de John Mayer"/>
+                <strong>Playlist pra limpar o violão</strong>
+              </a>
+
+              <a href="#" className="bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                <Image src="/johnmayer.jpg" width={104} height={104} alt="Capa do álbum de John Mayer"/>
+                <strong>Playlist pra limpar o violão</strong>
+              </a>
+
+              <a href="#" className="bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                <Image src="/johnmayer.jpg" width={104} height={104} alt="Capa do álbum de John Mayer"/>
+                <strong>Playlist pra limpar o violão</strong>
+              </a>
+
+              <a href="#" className="bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                <Image src="/johnmayer.jpg" width={104} height={104} alt="Capa do álbum de John Mayer"/>
+                <strong>Playlist pra limpar o violão</strong>
+              </a>
+
+            </div>
+
           </main>
+
         </div>
         <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
           footer
