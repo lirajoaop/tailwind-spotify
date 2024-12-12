@@ -7,7 +7,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { sans: ['DM Sans', 'sans-serif'], },
+    },
   },
   plugins: [],
 } satisfies Config;
