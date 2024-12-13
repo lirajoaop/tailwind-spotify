@@ -32,21 +32,29 @@ const Sidebar = () => {
 
       <div className='flex gap-4'>
         <Image src="/spotifyheart.png" alt='Spotify Heart' width={30} height={30}/>
-        <p>Liked Songs</p>
+        <p className='font-bold text-[19px]'>Liked Songs</p>
       </div>
 
       <div className='flex gap-4'>
-        <div>Img</div>
-        <p>Your Episodes</p>
+      <div className='bg-[#004638] w-[30px] rounded-sm h-[30px] flex items-center justify-center text-black'>
+          <Image src="/gg_media-podcast.png" alt='Plus Small' width={17} height={17}/>
+        </div>
+        <p className='font-bold text-[19px]'>Your Episodes</p>
       </div>
 
     </div>
 
-    <nav className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
-      <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist pra limpar o violão</a>
-      <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">trap etc</a>
-      <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Gangsta Rap</a>
-      <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">This Is MFDOOM</a>
+    <nav className="mt-[38px] border-zinc-800 flex flex-col gap-[15px]">
+      <a href="" className="text-bold text-[19px] text-zinc-400 hover:text-zinc-100">Playlist pra limpar o violão</a>
+      <a href="" className="text-bold text-[19px] text-zinc-400 hover:text-zinc-100">trap etc</a>
+      <a href="" className="text-bold text-[19px] text-zinc-400 hover:text-zinc-100">Gangsta Rap</a>
+      <a href="" className="text-bold text-[19px] text-zinc-400 hover:text-zinc-100">This Is MFDOOM</a>
+    </nav>
+
+    <nav className='mt-[63px] flex gap-2 items-center justify-start'>
+      <Image src="/grommet-icons_install-option.png" alt='Install Icon' width={24} height={24} />
+      <p className='font-bold text-[19px]'>Install App</p>
+
     </nav>
 
   </aside>
